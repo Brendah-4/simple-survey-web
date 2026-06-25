@@ -39,7 +39,7 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
         runtimeCaching: [
           {
-            urlPattern:/^https:\/\/simple-survey-api-c3kj\.onrender\.com\/.*/i,
+            urlPattern:/^https:\/\/simple-survey-api-production\.up\.railway\.app\/.*/i,
             handler: 'NetworkFirst',
             options: {
               cacheName: 'api-cache',
@@ -53,7 +53,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://simple-survey-api-c3kj.onrender.com',
+        target: 'https://simple-survey-api-production.up.railway.app',
         changeOrigin: true,
         secure: false,
       },

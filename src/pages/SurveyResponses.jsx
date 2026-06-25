@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { api } from '../lib/api';
 
-const API = 'https://simple-survey-api-c3kj.onrender.com';
+const API = 'https://simple-survey-api-production.up.railway.app';
 
 export default function SurveyResponses() {
   const [surveys, setSurveys] = useState([]);
